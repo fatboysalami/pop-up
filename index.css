@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #282626;
+    font-family: Roboto, sans-serif;
+}
+
+.button{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 28px;
+    color: black;
+    background-color: orange;
+    font-size: 2rem;
+}
+
+.button a:hover{
+    cursor: pointer;
+    background-color: darkgoldenrod;
+}
+
+.pop-up{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.pop-up.active{
+    display: block;
+}
+
+.pop-up-container{
+    display: flex; /*для того чтоб .pop-up-body размещался по центру*/
+    width: 100%;
+    height: 100%;
+}
+
+.pop-up-body{
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 28px;
+    text-align: center;
+    padding: 0 15px 15px 15px;
+    position: relative;
+}
+
+.pop-up-body h1{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container button:hover {
+    opacity: 0.8;
+}
+
+.psw{
+    display: block;
+    padding-top: 10px;
+}
+
+.psw a{
+    text-decoration: none;
+    color: black;
+}
+.container input[type=checkbox]:hover, label{
+    cursor: pointer;
+}
+
+.pop-up-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px
+}
